@@ -1,0 +1,63 @@
+body{
+    background-color: #EFF4FA;
+}
+#profile_photo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(28, 119, 152);/*replace it to background-image*/
+    border-radius: 50%;
+    z-index: 1;
+}
+#left_navigation_bar{
+    position: fixed;
+    top: 42px;
+    left: 29px;
+    width: 263px;
+    height: 596px;
+    background-color: red;
+    border-radius: 10px;
+}
+#top_navigation_bar{
+    position: fixed;
+    top: 35px;
+    right: 27px;
+    height: 57px;
+    width: 1153px;
+    background-color: blue;
+}
+#top_music{
+    position: absolute;
+    top: 95px;
+    right: 27px;
+    height: 237px;
+    width: 1153px;
+    background-color: blueviolet;
+}
+#popular{
+    position: absolute;
+    top: 339px;
+    right: 798px;
+    height: 298px;
+    width: 381px;
+    background-color: chartreuse;
+}
+#albums{
+    position: absolute;
+    top: 339px;
+    right: 27px;
+    height: 298px;
+    width: 763px;
+    background-color: aqua;
+}
+#track_menu{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    height: 85px;
+    width: 1470px;
+    background-color: orange;
+}
