@@ -10,7 +10,7 @@
     width: 100px;
     background-color: rgb(28, 119, 152);
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
 }
 #left_navigation_bar{
     position: fixed;
@@ -20,6 +20,7 @@
     height: 596px;
     background-color: red;
     border-radius: 10px;
+    z-index: 1;
 }
 #top_navigation_bar{
     position: fixed;
@@ -30,17 +31,15 @@
     background-color: blue;
 }
 #top_music{
-    display: flexbox;
-    position: absolute;
+    display: flex;
+    position: fixed;
     top: 70px;
     right: 27px;
-    display: block;
     height: 268px;
     width: 1153px;
     background-color: blueviolet;
     overflow: auto;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
+    overflow-x: scroll;
 }
 #popular{
     position: absolute;
@@ -66,7 +65,6 @@
     height: 85px;
     width: 1470px;
     background-color: orange;
-    position: fixed;
 }
 input{
     width: 583px;
@@ -79,9 +77,15 @@ input{
     margin-left: 46px;
 }
 #top_music .song{
-    display: inline-block;
-    width: 207px;
+    width: 207px !important;
     height: 241px;
     background-color: white;
     margin-left: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-wrap: nowrap; */
+    flex-shrink: 0;
+}
+h2{
+    position: absolute;
 }
