@@ -1,11 +1,11 @@
 *{
     margin: 0px;
+    box-sizing: border-box;
 }
 body{
     background: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     
 }
 #profile_photo{
@@ -14,21 +14,24 @@ body{
     left: 111px;
     height: 100px;
     width: 100px;
-    background-color: rgb(28, 119, 152);
+    background: url("https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Profile%20Photo.png");
     border-radius: 50%;
     z-index: 2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-size: cover;
 }
 #left_navigation_bar{
     position: fixed;
     top: 42px;
     left: 29px;
     width: 263px;
-    height: 596px;
+    height: 573px;
     background-color: white;
     border-radius: 10px;
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 73px;
+    padding-left: 9px;
 }
 #top_navigation_bar{
     position: fixed;
@@ -36,7 +39,6 @@ body{
     right: 27px;
     height: 57px;
     width: 1153px;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 #top_music{
     display: flex;
@@ -54,21 +56,20 @@ body{
     right: 800px;
     height: 262px;
     width: 381px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column-reverse;
     overflow-y: scroll;
     border-radius: 10px;
 }
 #albums{
+    display: flex;
     position: absolute;
     top: 373px;
     right: 27px;
     height: 262px;
     width: 763px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    overflow: auto;
+    overflow-x: scroll;
 }
 #track_menu{
     position: fixed;
@@ -94,6 +95,8 @@ input{
     font-weight: 800;
     border-radius: 10px;
     border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 #top_music .song{
     width: 207px;
@@ -107,8 +110,12 @@ input{
     z-index: 2;
     border-radius: 10px;
 }
+#top_music .song:hover{
+    background-color: aliceblue;
+    opacity: 0.3;
+}
 h2{
-    position: absolute;
+    position: relative;
 }
 #results{
     position: fixed;
@@ -128,9 +135,16 @@ h2{
     margin: 4px;
     min-width: 348px;
     min-height: 55px;
-    border-radius: 50px;
+    border-radius: 26px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
+    background-color: #8F888F;
+    opacity: 0.3;
+}
+.oftop_music{
+    position: relative;
+    left: 299px;
+    top: 63px;
 }
 .ofpopular{
     position: absolute;
@@ -144,7 +158,38 @@ h2{
 }
 #popular .pplr:hover{
     background-color: white;
-    min-width: 350px;
-    min-height: 57px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.album{
+    position: relative;
+    width: 255px;
+    height: 233px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    flex-shrink: 0;
+    background-color: #8F888F;
+    opacity: 0.2;
+}
+.album:hover{
+    background-color: aliceblue;
+    opacity: 0.2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile_name , .email{
+    text-align: center;
+}
+.box{
+    margin: 50px;
+}
+.browse , .discover{
+    padding: 10px;
+    border-radius: 10px;
+}
+.browse:hover , .discover:hover{
+    background-color: #dadada;
 }
