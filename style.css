@@ -149,12 +149,12 @@ body{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.top_name , .popular_name ,.play_name{
+.top_name , .popular_name ,#play_name{
  font-family: 'Roboto Slab', serif;
  font-weight: 600;
  font-size: 1.1em;
 }
-.top_singer , .popular_singer ,.play_singer{
+.top_singer , .popular_singer ,#play_singer {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.8em;
    }
@@ -189,9 +189,9 @@ body{
     margin: 19px 11px 6px -2px;
     visibility: visible;
 }
-.play_thumbnail
+#play_thumbnail
 {
-    background-color: red;
+    background-size: cover;
     position: relative;
     left: 58px;
     margin: 5px;
@@ -199,12 +199,12 @@ body{
     height: 75px;
     border-radius: 10px;
 }
-.play_name{
+#play_name{
     position: absolute;
     left: 159px;
     top: 20px;
 }
-.play_singer{
+#play_singer{
     position: absolute;
     left: 160px;
     top: 44px;
@@ -332,14 +332,15 @@ h2{
     display: flex
 }
 .controls button{
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-right: -5px;
     background-color: white;
     border: white solid 0px;
     border-color: white;
 }
 audio{
     width: 80%;
-    height: 57px;
+    height: 64px;
 }
 .album{
     background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Album.png);
