@@ -191,6 +191,7 @@ body{
 }
 #play_thumbnail
 {
+    background-image: url("https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/One%20love.jpeg");
     background-size: cover;
     position: relative;
     left: 58px;
