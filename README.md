@@ -4,7 +4,7 @@ This project is a custom-built music player developed by Aman Agrawal in collabo
 
 ## Features
 Play, pause, skip, and control volume of tracks.
-The music player is deployed and accessible through the following link: 
+The music player is deployed and accessible through the following link: https://hiamanagrawal.github.io/music_player_kalvium/
 
 ## Contribution
 This project was a collaborative effort between Aman agrawal and Kamakshi. Both contributed to the development, design, and testing of the music player.
