@@ -41,6 +41,9 @@ const songs = [
 let currentSongIndex = 0;
 let isPlaying = false;
 
+function disappear_result(){
+    document.getElementById("results").style.display = "none";
+}
 
 function playSong() {
     audioPlayer.src = songs[currentSongIndex];
